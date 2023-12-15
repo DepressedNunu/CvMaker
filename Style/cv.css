@@ -1,0 +1,66 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    max-width: 210mm;
+    margin: 0 auto;
+}
+
+.zone-1,
+.zone-2 {
+    padding: 20px;
+}
+
+.toCenter {
+    text-align: center;
+}
+
+.profile {
+    width: 100mm; /* Adjust the width as needed */
+    height: 100mm; /* Adjust the height as needed */
+    max-width: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.contact-box,
+.personal-box,
+.hobbies-box {
+    margin-top: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.text {
+    margin-left: 10px;
+}
+
+.skill-1 {
+    margin-bottom: 10px;
+}
+
+.progress {
+    display: flex;
+}
+
+.fas.fa-star {
+    color: #f1c40f;
+}
