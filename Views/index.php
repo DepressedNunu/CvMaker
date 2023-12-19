@@ -9,7 +9,7 @@
     <script src="/Script/app.js"></script>
 </head>
 <body>
-<div class="container text-light">
+<div class="container">
     <h1 class="text-center my-5 fw-bold">Resume Form</h1>
     <div class="form-container">
         <form action="/Script/submitToDatabase.php" method="POST" enctype="multipart/form-data">
@@ -159,6 +159,31 @@
             </div>
             <button type="submit" class="btn-primary">Submit</button>
         </form>
+    </div>
+</div>
+
+<div class="recent-list-container">
+    <h1 class="text-center my-5 fw-bold">Recent Resumes</h1>
+    <div class="recent-list">
+        <?php
+        require_once '../Script/db.php';
+        $resume = retrieveAllResumes();
+        $i = 0;
+        foreach ($resume as $currentResume) {
+            $i +=1;
+            echo "<div class='recent-item' data-value='$currentResume->dbId'>
+                <div class='recent-item-name'>
+                    <h3>" . $currentResume->firstName . " " . $currentResume->lastName . "</h3>
+                </div>
+                <div class='recent-item-profession'>
+                    <h4>" . $currentResume->profession . "</h4>
+                </div>
+                <div class='recent-item-button'>
+                    <a class='btn' href='../Views/resume-template.php?id=" . $currentResume->dbId . "'>Download PDF</a>
+                </div>
+            </div>";
+        }
+        ?>
     </div>
 </div>
 </body>

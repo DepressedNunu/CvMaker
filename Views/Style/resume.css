@@ -7,7 +7,6 @@ body {
 .grid-container {
     display: grid;
     grid-template-columns: 1fr 2fr;
-    grid-gap: 20px;
     max-width: 800px; /* Adjust based on your design preference */
     margin: 20px auto;
 }
@@ -68,7 +67,7 @@ body {
 /* Zone 2 Styles */
 .zone-2 {
     padding: 20px;
-    background-color: #fff;
+    background-color: #ededed;
 }
 
 .headTitle h1 {

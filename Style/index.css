@@ -1,4 +1,6 @@
 body {
+  display: flex;
+  justify-content: center;
   background-color: #e0f2f1; /* Light green background color */
   margin: 0;
   padding: 0;
@@ -68,4 +70,65 @@ h1 {
 .btn-primary:hover {
   background-color: #00796b; /* Darker green on hover for the button */
   border-color: #00796b;
+}
+
+/* Recent Cv display */
+
+.recent-list-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #e0f2f1; /* Light green background color */
+    margin: 0;
+    padding: 0;
+}
+
+.recent-list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #e0f2f1; /* Light green background color */
+    margin: 0;
+    padding: 0;
+}
+
+.recent-list-item{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #e0f2f1; /* Light green background color */
+    margin: 0;
+    padding: 0;
+}
+
+.recent-item {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #ffffff; /* White container background color */
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Box shadow for a subtle border effect */
+    min-width: 400px;
+    max-width: 600px;
+    padding: 20px;
+    margin: 20px;
+
+}
+
+.btn {
+    background-color: #009688; /* Dark green button background color */
+    color: #fff; /* White button text color */
+    border: 1px solid #009688; /* Dark green button border color */
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    width: 100%;
+    text-decoration: none;
+    transition: all 200ms ;
+}
+
+.btn:hover {
+    transition-duration: 200ms;
+    background-color: #00796b; /* Darker green on hover for the button */
+    border-color: #00796b;
 }

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="db" uuid="710e26d0-d6b0-4bd6-9548-050ebbba81d3">
+    <data-source source="LOCAL" name="db" uuid="be2c0438-053d-47b5-a6f5-00269f48bd71">
       <driver-ref>sqlite.xerial</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
-      <jdbc-url>jdbc:sqlite:C:\Users\nunu\Documents\CvMaker\Script\db.sqlite</jdbc-url>
+      <jdbc-url>jdbc:sqlite:C:\Users\nunu\Documents\GitHub\Cv\Script\db.sqlite</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
       <libraries>
         <library>

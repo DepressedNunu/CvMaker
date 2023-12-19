@@ -6,6 +6,8 @@ require 'Education.php';
 require 'Experience.php';
 
 class ResumeModel {
+
+    public $dbId;
     public $profile;
     public $firstName;
     public $lastName;
@@ -18,7 +20,7 @@ class ResumeModel {
     public $educations = [];
     public $experiences = [];
 
-    public function __construct($profile, $firstName, $lastName, $profession, $email, $phone, $aboutMe) {
+    public function __construct($profile, $firstName, $lastName, $profession, $email, $phone, $aboutMe, $dbId = null) {
         $this->profile = $profile;
         $this->firstName = $firstName;
         $this->lastName = $lastName;
@@ -26,6 +28,7 @@ class ResumeModel {
         $this->email = $email;
         $this->phone = $phone;
         $this->aboutMe = $aboutMe;
+        $this->dbId = $dbId;
     }
 
     function insertResumeData($db): void
