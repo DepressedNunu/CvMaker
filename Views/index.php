@@ -7,6 +7,7 @@
     <title>Resume Generator</title>
     <link rel="stylesheet" href="/Style/index.css">
     <script src="/Script/app.js"></script>
+    <script src="/Script/index.js"></script>
 </head>
 <body>
 <div class="container">
